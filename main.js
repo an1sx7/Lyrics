@@ -28,4 +28,8 @@ function fl(content){
       <p>${word}</p>
     `
   })
+  localStorage.setItem("lyrics",dv.innerHTML)
+}
+onload=()=>{
+  dv.innerHTML+=localStorage.getItem("lyrics")
 }
