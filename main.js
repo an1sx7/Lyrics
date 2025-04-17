@@ -30,6 +30,4 @@ function fl(content){
   })
   localStorage.setItem("lyrics",dv.innerHTML)
 }
-onload=()=>{
-  dv.innerHTML+=localStorage.getItem("lyrics")
-}
+dv.innerHTML+=localStorage.getItem("lyrics")
